@@ -19,7 +19,7 @@ O projeto deve estar completo, incluindo o package.json para que eu possa instal
 2- Rodar "npm install" no terminal para instalar dependências
 3- Rodar "npm run dev" no terminal para iniciar o servidor para habilitar as rotas para consumo da API
 4- Ele roda por padrão na url http://localhost:3008/
-# MongoDD
+## MongoDB
 É necessario ter um banco de dados com:
 Database = livros
 Collection = livro 

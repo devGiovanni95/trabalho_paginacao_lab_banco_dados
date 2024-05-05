@@ -10,15 +10,15 @@ O projeto deve estar completo, incluindo o package.json para que eu possa instal
 
 # Como rodar o projeto
 ## Frontend
-1- Abrir terminal na raiz da pasta frontend
-2- Rodar "npm install" no terminal para instalar dependências
-3- Rodar "npm start" no terminal para iniciar o serviço web
-4- Ele roda por padrão na url http://localhost:3000/
+1. Abrir terminal na raiz da pasta frontend
+2. Rodar "npm install" no terminal para instalar dependências
+3. Rodar "npm start" no terminal para iniciar o serviço web
+4. Ele roda por padrão na url http://localhost:3000/
 ## Backend
-1- Abrir terminal na raiz da pasta backend
-2- Rodar "npm install" no terminal para instalar dependências
-3- Rodar "npm run dev" no terminal para iniciar o servidor para habilitar as rotas para consumo da API
-4- Ele roda por padrão na url http://localhost:3008/
+1. Abrir terminal na raiz da pasta backend
+2. Rodar "npm install" no terminal para instalar dependências
+3. Rodar "npm run dev" no terminal para iniciar o servidor para habilitar as rotas para consumo da API
+4. Ele roda por padrão na url http://localhost:3008/
 ## MongoDB
 É necessario ter um banco de dados com:
 Database = livros

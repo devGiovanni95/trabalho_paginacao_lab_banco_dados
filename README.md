@@ -21,9 +21,9 @@ O projeto deve estar completo, incluindo o package.json para que eu possa instal
 4. Ele roda por padrão na url http://localhost:3008/
 ## MongoDB
 É necessario ter um banco de dados com:
-Database = livros
-Collection = livro 
-com a estrutura de dados:
+- Database = livros
+- Collection = livro 
+- Com a estrutura de dados:
 
 	{
 		"_id": "66303bf6367f5006f597d669",

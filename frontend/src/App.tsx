@@ -14,13 +14,17 @@ interface Livro {
 function App() {
   const [livros, setLivros] = useState<Livro[]>([])
   const [pageTotal, setPageTotal] = useState(0)
+  console.log("🚀 ~ App ~ pageTotal:", pageTotal)
   const [amount, setAmount] = useState(0)
+  console.log("🚀 ~ App ~ amount:", amount)
   const [btn1, setBtn1] = useState(0);
   const [btn2, setBtn2] = useState(0);
   const [btn3, setBtn3] = useState(0);
   const [btn4, setBtn4] = useState(1);
+  console.log("🚀 ~ App ~ btn4:", btn4)
   const [btn5, setBtn5] = useState(0);
   const [btn6, setBtn6] = useState(0);
+  console.log("🚀 ~ App ~ btn6:", btn6)
   const [btn7, setBtn7] = useState(0);
   const [page, setPage] = useState(1)
   
@@ -99,7 +103,7 @@ function countPages(qtd: number){
     countPages(amount)
     getLivros(page)
     console.log('treste',livros)
-  },[btn4, page])
+  },[btn4, page, amount])
 
 
   return ( 

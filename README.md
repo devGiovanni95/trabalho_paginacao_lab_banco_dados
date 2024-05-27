@@ -27,6 +27,7 @@ O projeto deve estar completo, incluindo o package.json para que eu possa instal
 - Collection = livro 
 - Com a estrutura de dados:
 
+```json
 	{
 		"_id": "66303bf6367f5006f597d669",
 		"titulo": "A Convenção Das Aves",
@@ -36,3 +37,7 @@ O projeto deve estar completo, incluindo o package.json para que eu possa instal
 		"ano": 2020,
 		"valor": 60
 	}
+```
+
+## Resultado final
+![](./version.png)

@@ -122,13 +122,13 @@ function countPages(qtd: number){
         {
           livros && (
             livros.map((livro:Livro) => (
-              <tr key={livro._id}>
-                <td>{livro.titulo}</td>
-                <td>{livro.autor}</td>
-                <td>{livro.isbn}</td>
-                <td>{livro.paginas}</td>
-                <td>{livro.ano}</td>
-                <td>{livro.valor}</td>
+              <tr key={livro._id} >
+                <td style={{fontWeight:600}}>{livro.titulo}</td>
+                <td style={{fontWeight:600}}>{livro.autor}</td>
+                <td style={{fontWeight:600}}>{livro.isbn}</td>
+                <td style={{fontWeight:600}}>{livro.paginas}</td>
+                <td style={{fontWeight:600}}>{livro.ano}</td>
+                <td style={{fontWeight:600}}>R$ {livro.valor}</td>
               </tr>
 
             ))
@@ -153,7 +153,7 @@ function countPages(qtd: number){
         <button style={{ display: btn2 > 0 ? '' : 'none'}} value={btn2} onClick={()=>{ handlePage(btn2) }}> {btn2} </button>
         <button style={{ display: btn3 > 0 ? '' : 'none'}} value={btn3} onClick={()=>{ handlePage(btn3) }}> {btn3} </button>
 
-        <button style={{background: `blue`, color: `white`}} value={btn4} onClick={()=>{}}> {btn4} </button>
+        <button style={{background: `black`, color: `white`}} value={btn4} onClick={()=>{}}> {btn4} </button>
 
         <button style={{ display: btn5 > pageTotal ? 'none' : ''}} value={btn5} onClick={()=>{ handlePage(btn5) }}> {btn5} </button>
         <button style={{ display: btn6 > pageTotal ? 'none' : ''}} value={btn6} onClick={()=>{ handlePage(btn6) }}> {btn6} </button>

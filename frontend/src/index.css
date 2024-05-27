@@ -24,12 +24,19 @@ code {
     }
     
     td, th {
-      border: 1px solid #dddddd;
+      /* border: 1px solid #dddddd; */
+      border: 0.2px solid black;
       text-align: left;
-      padding: 3px;
+      padding: 5px;
       font-size: 20px;
+      background-color: lightblue;
     }
-
+    
+    tr{
+      margin-left: 5px;
+      color: black;
+      font-size: 18px;
+    }
     
     tr:nth-child(even) {
       background-color: #dddddd;
@@ -50,7 +57,11 @@ code {
       height: 48px;
       font-size: 25px;
       margin-left: 10px;
-      
+      cursor: pointer;
+    }
+
+    button:hover{
+      background: springgreen;
     }
 
     .selected {

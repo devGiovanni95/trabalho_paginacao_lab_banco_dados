@@ -146,21 +146,21 @@ function countPages(qtd: number){
           )
           }
           
-        <button disabled={btn4 <= 1 ? true : false} onClick={()=>{firstPage()}}>{'<<'}</button>
-        <button disabled={btn4 <= 1 ? true : false} onClick={()=>{previous()}}>{'<'}</button>
+        <button style={{cursor: btn4 <= 1 ? 'not-allowed' : 'pointer'}} disabled={btn4 <= 1 ? true : false} onClick={()=>{firstPage()}}>{'<<'}</button>
+        <button style={{cursor: btn4 <= 1 ? 'not-allowed' : 'pointer'}} disabled={btn4 <= 1 ? true : false} onClick={()=>{previous()}}>{'<'}</button>
 
-        <button style={{ display: btn1 > 0 ? '' : 'none'}} value={btn1} onClick={()=>{ handlePage(btn1) }}> {btn1} </button>
-        <button style={{ display: btn2 > 0 ? '' : 'none'}} value={btn2} onClick={()=>{ handlePage(btn2) }}> {btn2} </button>
-        <button style={{ display: btn3 > 0 ? '' : 'none'}} value={btn3} onClick={()=>{ handlePage(btn3) }}> {btn3} </button>
+        <button className='btn' style={{ display: btn1 > 0 ? '' : 'none'}} value={btn1} onClick={()=>{ handlePage(btn1) }}> {btn1} </button>
+        <button className='btn' style={{ display: btn2 > 0 ? '' : 'none'}} value={btn2} onClick={()=>{ handlePage(btn2) }}> {btn2} </button>
+        <button className='btn' style={{ display: btn3 > 0 ? '' : 'none'}} value={btn3} onClick={()=>{ handlePage(btn3) }}> {btn3} </button>
 
         <button style={{background: `black`, color: `white`}} value={btn4} onClick={()=>{}}> {btn4} </button>
 
-        <button style={{ display: btn5 > pageTotal ? 'none' : ''}} value={btn5} onClick={()=>{ handlePage(btn5) }}> {btn5} </button>
-        <button style={{ display: btn6 > pageTotal ? 'none' : ''}} value={btn6} onClick={()=>{ handlePage(btn6) }}> {btn6} </button>
-        <button style={{ display: btn7 >  pageTotal ? 'none' : ''}} value={btn7} onClick={()=>{ handlePage(btn7) }}> {btn7} </button>
+        <button className='btn' style={{ display: btn5 > pageTotal ? 'none' : ''}} value={btn5} onClick={()=>{ handlePage(btn5) }}> {btn5} </button>
+        <button className='btn' style={{ display: btn6 > pageTotal ? 'none' : ''}} value={btn6} onClick={()=>{ handlePage(btn6) }}> {btn6} </button>
+        <button className='btn' style={{ display: btn7 >  pageTotal ? 'none' : ''}} value={btn7} onClick={()=>{ handlePage(btn7) }}> {btn7} </button>
 
-        <button disabled={ btn4 >= pageTotal ? true : false } onClick={()=>{next()}}>{'>'}</button>
-        <button disabled={ btn4 >= pageTotal ? true : false } onClick={()=>{lastPage()}}>{'>>'}</button>
+        <button style={{cursor: btn4 >= pageTotal  ? 'not-allowed' : 'pointer'}} disabled={ btn4 >= pageTotal ? true : false } onClick={()=>{next()}}>{'>'}</button>
+        <button style={{cursor: btn4 >= pageTotal  ? 'not-allowed' : 'pointer'}} disabled={ btn4 >= pageTotal ? true : false } onClick={()=>{lastPage()}}>{'>>'}</button>
 
       </div>
       </header>

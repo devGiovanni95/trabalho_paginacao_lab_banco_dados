@@ -60,11 +60,15 @@ code {
       cursor: pointer;
     }
 
-    button:hover{
+    .btn:hover{
       background: springgreen;
     }
 
     .selected {
       background-color: blue; /* Defina a cor de fundo desejada para o botão selecionado */
       color: white; /* Defina a cor do texto do botão selecionado */
+    }
+
+    .semColor{
+      
     }
